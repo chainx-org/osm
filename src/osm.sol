@@ -139,11 +139,11 @@ contract OSM is LibNote {
         }
     }
 
-    function peek() external view toll returns (bytes32,bool) {
+    function peek() external view returns (bytes32,bool) {
         return (bytes32(uint(cur.val)), cur.has == 1);
     }
 
-    function peep() external view toll returns (bytes32,bool) {
+    function peep() external view returns (bytes32,bool) {
         return (bytes32(uint(nxt.val)), nxt.has == 1);
     }
 
